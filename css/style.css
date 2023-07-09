@@ -8,6 +8,9 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  max-width: 108rem;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 section {
@@ -15,9 +18,11 @@ section {
   display: grid;
   gap: 2.5rem;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: repeat(2, 1fr);
   min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.795);
+  background-color: #000000cb;
+  @media only screen and (max-width: 799px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 div {
@@ -30,9 +35,9 @@ textarea {
   resize: none;
   font-family: 'M PLUS Code Latin', sans-serif;
   overflow: auto;
-  border: 20px solid rgba(0, 0, 0, 0.596);
+  border: 20px solid #00000098;
   font-weight: 600;
-  background-color: rgba(0, 0, 0, 0.322);
+  background-color: #00000052;
   border-radius: 10px;
   outline: transparent;
   padding: 1rem;
@@ -73,14 +78,48 @@ iframe {
   border-color: transparent;
 }
 
-label {
+label,
+button {
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  font-weight: 600;
+}
+
+label {
   color: #ffffff;
   position: absolute;
-  top: 10%;
-  right: 10%;
+  top: 2rem;
+  right: 2rem;
   text-transform: uppercase;
-  font-weight: 600;
+}
+
+button {
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  border: 1px solid #000000cb;
+  border-radius: 5px;
+}
+
+button:active {
+  background-color: #f0f8ff;
+  transform: scale(0.95);
+  transition: all;
+}
+
+.tabs {
+  display: flex;
+  padding-top: 1.5rem;
+  gap: 1rem;
+
+  @media only screen and (min-width: 799px) {
+    display: none;
+  }
+}
+
+.hidden {
+  @media only screen and (max-width: 799px) {
+    display: none;
+  }
 }

@@ -16,22 +16,36 @@
     <title>Code Editor</title>
   </head>
   <body>
+    <div class="tabs">
+      <button id="tabs-html">
+        <i class="fa-brands fa-html5 fa-2xl" style="color: #ff4d00"></i>
+        <p>html</p>
+      </button>
+      <button id="tabs-css">
+        <i class="fa-brands fa-css3-alt fa-2xl" style="color: #025cf7"></i>
+        <p>css</p>
+      </button>
+      <button id="tabs-js">
+        <i class="fa-brands fa-square-js fa-2xl" style="color: #eafa05"></i>
+        <p>js</p>
+      </button>
+    </div>
     <section>
-      <div>
+      <div id="one">
         <label for="html">
           <i class="fa-brands fa-html5 fa-2xl" style="color: #ff4d00"></i>
           <p>html</p>
         </label>
         <textarea name="html" id="html" cols="30" rows="10"></textarea>
       </div>
-      <div>
+      <div id="two" class="hidden">
         <label for="css">
           <i class="fa-brands fa-css3-alt fa-2xl" style="color: #025cf7"></i>
           <p>css</p>
         </label>
         <textarea name="css" id="css" cols="30" rows="10"></textarea>
       </div>
-      <div>
+      <div id="three" class="hidden">
         <label for="js">
           <i class="fa-brands fa-square-js fa-2xl" style="color: #eafa05"></i>
           <p>js</p>
