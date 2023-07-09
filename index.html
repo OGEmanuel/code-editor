@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Source+Code+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b104dd498c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Code Editor</title>
+  </head>
+  <body>
+    <section>
+      <div>
+        <label for="html">
+          <i class="fa-brands fa-html5 fa-2xl" style="color: #ff4d00"></i>
+          <p>html</p>
+        </label>
+        <textarea name="html" id="html" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <label for="css">
+          <i class="fa-brands fa-css3-alt fa-2xl" style="color: #025cf7"></i>
+          <p>css</p>
+        </label>
+        <textarea name="css" id="css" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <label for="js">
+          <i class="fa-brands fa-square-js fa-2xl" style="color: #eafa05"></i>
+          <p>js</p>
+        </label>
+        <textarea name="js" id="js" cols="30" rows="10"></textarea>
+      </div>
+      <!-- <div> -->
+      <iframe id="result"></iframe>
+      <!-- </div> -->
+    </section>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
